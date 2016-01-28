@@ -8,6 +8,6 @@ db:
     environment:
         MYSQL_DATABASE: website
         MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
-	volumes:
-        - /somwhere/on/my/local/machine/:/var/lib/mysql
+	**volumes:
+        - /somwhere/on/my/local/machine/:/var/lib/mysql**
 ```
