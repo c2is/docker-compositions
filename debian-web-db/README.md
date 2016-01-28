@@ -1,6 +1,6 @@
 # Warning
 The db container will lost its data when stopped. To persist data make a directory somwehere on your local system and add a volume in the docker-compose.yml, for example:  
-```
+```yml
 db:
     image: mysql
     ports:
