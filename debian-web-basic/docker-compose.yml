@@ -1,0 +1,16 @@
+application:
+    image: debian:jessie
+    volumes:
+        - ./:/var/www/website
+    tty: true
+c2isapachephp:
+    image: c2is/debian-apache2-mod-php5
+    environment:
+        # Default: website.docker
+        WEBSITE_HOST: projectname.loc
+        # Default: no, DocumentRoot have not the trailing /web/
+        SYMFONY_VHOST_COMPLIANT: "no"
+    ports:
+        - 800:80
+    volumes_from:
+        - application
