@@ -21,12 +21,12 @@ c2isapachefpm:
         # Default: website.docker
         WEBSITE_HOST: website.docker
         # Default: website
-        VHOST_DIRNAME: courchevel
+        VHOST_DIRNAME: a_project
         # Default: no, DocumentRoot have not the trailing /web/
         SYMFONY_VHOST_COMPLIANT: "no"
         CAPISTRANO_VHOST_COMPLIANT: "yes"
         # you can get the value with : cat ~/.ssh/id_rsa.pub
-        SSH_KEY: "myIdRsaPubKey"
+        SSH_KEY: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCng9ym45RhHsJ3t8D5giR4dKkdLfFvWwp6Mp3w4+QB3TozlUPUr01uDnKw69fBox8XAIJhO60WJ3p5uGdRel9bKsTbuMlJMTRTQNKhdlr/LQAZNCYtjWwcNJxIHmr3gz0xkj8H/X9iJF5kFjUss1AShxZbZrSqjmeHKM/1IfV7AT1jXNAhMeBlgxP2+U7C+zp3FPDayD3KfaxFfLYA7eXeQhD7N5THit6lIqV0E8ENjSyFByN1l3sZGshcwX7OAP6NDK0sVy0uTyftZ6fxPGF9xOvIukC1hdfj0dZqUMgM03D27zop4HA5jVKnjhKbW+MIWm77zDf6WySiLVWO37NX andre@MacBook-Pro-de-Andre.local"
     ports:
         - "222:22"
         - "800:80"
